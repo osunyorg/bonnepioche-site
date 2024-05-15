@@ -1,6 +1,10 @@
 ---
 title: Menu principal
 items:
+- title: Bonne Pioche Cinéma
+  target: "/fr/bonne-pioche-cinema/"
+  kind: page
+  children: []
 - title: Actualités
   target: "/fr/actualites/"
   kind: page
@@ -15,10 +19,6 @@ items:
   children: []
 - title: Organisations
   target: "/fr/organisations/"
-  kind: page
-  children: []
-- title: Bonne Pioche Cinéma
-  target: "/fr/bonne-pioche-cinema/"
   kind: page
   children: []
 
