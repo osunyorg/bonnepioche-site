@@ -9,8 +9,8 @@ items:
   target: "/fr/actualites/"
   kind: page
   children: []
-- title: Projets
-  target: "/fr/projets/"
+- title: Productions
+  target: "/fr/productions/"
   kind: page
   children: []
 - title: Équipe
