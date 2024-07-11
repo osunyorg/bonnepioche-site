@@ -33,8 +33,8 @@ fr:
   params:
     social:
   permalinks:
-    projects: /projets/:year-:slug/
-    projects_categories: /projets/:slug/
+    projects: /productions/:year-:slug/
+    projects_categories: /productions/:slug/
   taxonomies:
     administrator: administrators
     author: authors

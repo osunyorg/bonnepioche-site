@@ -13,12 +13,4 @@ items:
   target: "/fr/productions/"
   kind: page
   children: []
-- title: Équipe
-  target: "/fr/equipe/"
-  kind: page
-  children: []
-- title: Organisations
-  target: "/fr/organisations/"
-  kind: page
-  children: []
 
