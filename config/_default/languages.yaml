@@ -2,7 +2,7 @@
 
 en:
   title: >-
-    Site
+    Bonne Pioche Productions
   contentDir: content/en
   languageCode: en
   languageName: English
@@ -26,7 +26,7 @@ en:
     volume: volumes
 fr:
   title: >-
-    Site
+    Bonne Pioche Productions
   contentDir: content/fr
   languageCode: fr
   languageName: Français
