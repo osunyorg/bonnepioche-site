@@ -9,3 +9,6 @@ allowed_domains:
   - "www.youtube.com"
   - "img.youtube.com"
   - "youtu.be"
+  - "vimeo.com"
+  - "player.vimeo.com"
+  - "vumbnail.com"
