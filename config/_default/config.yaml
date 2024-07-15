@@ -6,4 +6,16 @@ params:
   summary:
     position: hero
   search:
-    active: false  
+    active: false
+  projects:
+    index:
+      options:
+        categories: false
+        summary: false
+        title: false
+        year: false
+    single:
+      options:
+        categories: true
+        summary: true
+        year: false
