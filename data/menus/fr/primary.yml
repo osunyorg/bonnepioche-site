@@ -5,4 +5,20 @@ items:
   target: "/fr/cinema/"
   kind: page
   children: []
+- title: Télévision
+  target: "/fr/television/"
+  kind: page
+  children: []
+- title: Story
+  target: "/fr/story/"
+  kind: page
+  children: []
+- title: Spectacles
+  target: "/fr/spectacles/"
+  kind: page
+  children: []
+- title: Music
+  target: "/fr/music/"
+  kind: page
+  children: []
 
