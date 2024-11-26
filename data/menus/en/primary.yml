@@ -5,16 +5,20 @@ items:
   target: "/en/posts/"
   kind: page
   children: []
+  file: content/en/posts/_index.html
 - title: Projects
   target: "/en/projects/"
   kind: page
   children: []
+  file: content/en/projects/_index.html
 - title: Team
   target: "/en/team/"
   kind: page
   children: []
+  file: content/en/persons/_index.html
 - title: Organizations
   target: "/en/organizations/"
   kind: page
   children: []
+  file: content/en/organizations/_index.html
 
