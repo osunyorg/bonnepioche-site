@@ -5,25 +5,30 @@ items:
   target: "/fr/cinema/"
   kind: page
   children: []
+  path: "/pages/cinema"
   file: content/fr/pages/cinema/_index.html
 - title: Télévision
   target: "/fr/television/"
   kind: page
   children: []
+  path: "/pages/television"
   file: content/fr/pages/television/_index.html
 - title: Story
   target: "/fr/story/"
   kind: page
   children: []
+  path: "/pages/story"
   file: content/fr/pages/story/_index.html
 - title: Spectacles
   target: "/fr/spectacles/"
   kind: page
   children: []
+  path: "/pages/spectacles"
   file: content/fr/pages/spectacles/_index.html
 - title: Music
   target: "/fr/music/"
   kind: page
   children: []
+  path: "/pages/music"
   file: content/fr/pages/music/_index.html
 
