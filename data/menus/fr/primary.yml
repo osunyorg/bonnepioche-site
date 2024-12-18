@@ -4,30 +4,35 @@ items:
 - title: Cinéma
   target: "/fr/cinema/"
   kind: page
+  new_tab: false
   children: []
   path: "/pages/cinema"
   file: content/fr/pages/cinema/_index.html
 - title: Télévision
   target: "/fr/television/"
   kind: page
+  new_tab: false
   children: []
   path: "/pages/television"
   file: content/fr/pages/television/_index.html
 - title: Story
   target: "/fr/story/"
   kind: page
+  new_tab: false
   children: []
   path: "/pages/story"
   file: content/fr/pages/story/_index.html
 - title: Spectacles
   target: "/fr/spectacles/"
   kind: page
+  new_tab: false
   children: []
   path: "/pages/spectacles"
   file: content/fr/pages/spectacles/_index.html
 - title: Music
   target: "/fr/music/"
   kind: page
+  new_tab: false
   children: []
   path: "/pages/music"
   file: content/fr/pages/music/_index.html
