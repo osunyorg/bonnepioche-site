@@ -12,8 +12,6 @@ en:
   permalinks:
     projects: /projects/:year-:slug/
     projects_categories: /projects/:slug/
-    posts: /posts/:year-:month-:day-:slug/
-    posts_categories: /posts/:slug/
   taxonomies:
     administrator: administrators
     author: authors
@@ -39,8 +37,6 @@ fr:
   permalinks:
     projects: /productions/:year-:slug/
     projects_categories: /productions/:slug/
-    posts: /actualites/:year-:month-:day-:slug/
-    posts_categories: /actualites/:slug/
   taxonomies:
     administrator: administrators
     author: authors
