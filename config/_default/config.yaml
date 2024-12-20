@@ -9,6 +9,10 @@ params:
     position: hero
   search:
     active: true
+    position: upper-menu
+  menu:
+    i18n: 
+      display: false
   design:
     force_full_width: true
   projects:

@@ -6,6 +6,9 @@ header#document-header
     top: 0
     bottom: 0
     background: $header-background
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     nav:not(.upper-menu) 
         > .container
             padding-left: $spacing-4
@@ -34,3 +37,6 @@ header#document-header
                             font-weight: bold
             .nav-level-2, .nav-level-3
                 display: none
+    .upper-menu
+        order: 2
+        text-align: left
