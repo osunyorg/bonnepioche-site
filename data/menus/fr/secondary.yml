@@ -1,4 +1,9 @@
 ---
 title: Menu secondaire
-items: []
+items:
+- title: Shop
+  target: ''
+  kind: url
+  new_tab: true
+  children: []
 
