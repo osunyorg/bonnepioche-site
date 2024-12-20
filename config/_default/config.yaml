@@ -8,7 +8,9 @@ params:
   summary:
     position: hero
   search:
-    active: false
+    active: true
+  design:
+    force_full_width: true
   projects:
     index:
       options:
