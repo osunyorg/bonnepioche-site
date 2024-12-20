@@ -1,0 +1,36 @@
+header#document-header
+    width: offset(3)
+    transform: none !important
+    position: fixed
+    left: 0
+    top: 0
+    bottom: 0
+    background: $header-background
+    nav:not(.upper-menu) 
+        > .container
+            padding-left: $spacing-4
+            padding-right: columns(1)
+            display: block
+            li > a
+                padding-right: 0
+    .logo
+        img
+            margin-left: auto
+    nav
+        padding-top: $spacing-4
+        padding-bottom: 0
+        text-align: right
+        > .container
+            padding-right: 0
+            align-items: center
+            justify-content: start
+            .nav-level-1
+                display: block
+                li, li:last-child
+                    a, span
+                        padding-top: $spacing-3
+                        padding-left: 0
+                        &.active
+                            font-weight: bold
+            .nav-level-2, .nav-level-3
+                display: none

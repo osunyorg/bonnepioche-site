@@ -3,6 +3,8 @@ paginate: 24
 enableRobotsTXT: true
 removePathAccents: true
 params:
+  logo:
+    footer: "/assets/images/logo-white.svg"
   summary:
     position: hero
   search:
