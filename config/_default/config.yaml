@@ -10,6 +10,9 @@ params:
   search:
     active: true
     position: upper-menu
+    appearance: text
+  breadcrumb:
+    position: none
   menu:
     i18n: 
       display: false
