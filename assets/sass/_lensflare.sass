@@ -1,0 +1,30 @@
+@keyframes rotate
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+
+.lensflare
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    overflow: hidden
+    user-select: none
+    pointer-events: none
+    > div
+        animation: rotate 50s infinite forwards linear
+        width: 100px
+        height: 100px
+        position: absolute
+        transform: rotate(0deg)
+        &:nth-child(even)
+            animation: rotate 50s infinite reverse
+        > div
+            background: #fbecbf
+            border-radius: 50%
+            content: ''
+            display: block
+            height: 100%
+            width: 100%
