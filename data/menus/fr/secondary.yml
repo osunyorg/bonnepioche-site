@@ -20,4 +20,9 @@ items:
   children: []
   path: "/pages/contact"
   file: content/fr/pages/contact/_index.html
+- title: Rechercher
+  target: ''
+  kind: blank
+  new_tab: false
+  children: []
 
