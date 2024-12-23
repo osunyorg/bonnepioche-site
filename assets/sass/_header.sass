@@ -16,8 +16,12 @@ header#document-header
             display: block
             li > a
                 padding-right: 0
-        li > a
-            @include h2
+        li
+            a
+                @include h2
+                &.active
+                    @include h1
+                    font-style: italic
     .logo
         img
             margin-left: auto
@@ -42,6 +46,10 @@ header#document-header
     .upper-menu
         order: 2
         text-align: left
+        li
+            a
+                @include h5
+                padding: $spacing-2 0 !important
 
 #nav-accessibility
     position: fixed
