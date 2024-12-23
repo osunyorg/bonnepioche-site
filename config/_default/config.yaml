@@ -31,3 +31,5 @@ params:
         categories: true
         summary: true
         year: false
+  share_links:
+    enabled: false

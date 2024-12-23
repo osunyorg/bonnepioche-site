@@ -1,0 +1,25 @@
+
+.block-projects--grid
+    .project
+        position: relative
+        &-title
+            a
+                @include h2
+                color: var(--color-accent)
+        @include media-breakpoint-up(desktop)
+            overflow: hidden
+            &-title
+                padding: $spacing-3
+            .media
+                margin-bottom: 0
+            .project-content
+                background: white
+                position: absolute
+                left: 0
+                right: 0
+                bottom: 0
+                transform: translateY(100%)
+                transition: 0.4s cubic-bezier(0, 0.65, 0.4, 1)
+            &:hover
+                .project-content
+                    transform: translateY(0)

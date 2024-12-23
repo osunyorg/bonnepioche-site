@@ -1,5 +1,9 @@
 @include media-breakpoint-up(desktop)
     footer#document-footer
+        align-items: center
+        display: flex
+        flex-direction: column
+        justify-content: center
         position: fixed
         bottom: 0
         left: offset(3)
@@ -12,8 +16,9 @@
             align-items: center
             + .container
                 align-items: center
-        .footer-i18n
-            display: none
+                padding-top: 0
+            &:nth-child(2)
+                display: none
         .footer-legals
             order: 2
             display: flex
@@ -25,14 +30,23 @@
                     margin-top: 0
                 a, span
                     @include meta
-        .footer-credit
-            display: none
+        .logo img
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: $spacing-3
+        .tagline
+            @include h2
+            display: block
+            text-align: center
+
+.footer-logo
+    .tagline
+        display: none
+
+.footer-i18n, .footer-credit
+    display: none
 
 .footer-social.site-links
-    display: flex
-    gap: $spacing-3
-    justify-content: center
-    flex-wrap: wrap
     a, span
         color: white
     li
@@ -44,5 +58,10 @@
         &::after
             font-size: 0.75em
             opacity: 0.6
-    li + li
-        margin-top: 0 !important
+    @include media-breakpoint-up(desktop)
+        display: flex
+        column-gap: $spacing-3
+        flex-wrap: wrap
+        justify-content: center
+        li + li
+            margin-top: 0 !important
