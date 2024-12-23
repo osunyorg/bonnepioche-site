@@ -17,12 +17,14 @@ header#document-header
             li > a
                 padding-right: 0
             .nav-level-1
+                margin-top: $spacing-3
                 li
                     a
                         @include h2
+                        transition: all 0.3s
+                        transform-origin: right
                         &.active, &:hover
-                            @include lead
-                            font-style: italic
+                            transform: scale(1.33)
     .logo
         img
             margin-left: auto

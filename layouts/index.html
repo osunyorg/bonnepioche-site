@@ -1,5 +1,32 @@
 {{ define "main" }}
   <div class="document-content">
     <div class="lensflare"></div>
+    <div class="home__content">
+      <nav aria-label="{{ i18n "commons.menu.main" }}">
+        <div class="container">
+          {{ partial "commons/logo.html" "/assets/images/logo-white.svg" }}
+
+          <div class="menu">
+            {{ partial "commons/menu.html" (dict
+                "kind" "primary"
+                "dropdown" true
+                "level" 1
+                "stop" 1
+                "context" .
+              )}}
+          </div>
+
+          {{ with (or site.Params.contact_details site.Data.website.social) }}
+            <ul class="footer-social site-links">
+              {{ partial "commons/socials" (dict
+                  "use_default_email_label" true
+                  "context" .
+                )}}
+            </ul>
+          {{ end }}
+
+        </div>
+      </nav>
+    </div>
   </div>
 {{ end }}

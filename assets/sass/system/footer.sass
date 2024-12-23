@@ -5,3 +5,22 @@ footer#document-footer
     right: 0
     min-height: 100vh
     z-index: 0
+
+.footer-social.site-links
+    display: flex
+    gap: $spacing-3
+    justify-content: center
+    a, span
+        color: white
+        text-decoration: none
+    li
+        @include h3
+        display: flex
+        flex-direction: row-reverse
+        align-items: center
+        gap: $spacing-2
+        &::after
+            font-size: 0.75em
+            opacity: 0.6
+    li + li
+        margin-top: 0 !important

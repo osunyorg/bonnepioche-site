@@ -3,3 +3,29 @@
         display: none !important
     main
         min-height: 100vh
+        color: white
+        padding-left: 0 !important
+        margin-bottom: 0 !important
+        text-align: center
+        padding-top: $spacing-5
+        padding-bottom: $spacing-3
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        .menu
+            --color-accent: white
+            margin-top: $spacing-3
+            .nav-level-1
+                display: block
+                li
+                    a
+                        @include h2
+                        transition: all 0.3s
+                        &:hover
+                            transform: scale(1.33)
+                    + li
+                        margin-top: $spacing-2
+    .footer-social
+        margin-top: $spacing-6
+
