@@ -33,6 +33,27 @@ fr:
   languageName: Français
   params:
     contact_details:
+      social_networks:
+        facebook:
+          label: >-
+            BonnePiocheProd
+          value: >-
+            https://www.facebook.com/BonnePiocheProd
+        instagram:
+          label: >-
+            bonnepioche
+          value: >-
+            https://instagram.com/bonnepioche
+        linkedin:
+          label: >-
+            bonnepioche
+          value: >-
+            https://www.linkedin.com/company/bonnepioche/
+        x:
+          label: >-
+            bonne_pioche
+          value: >-
+            https://x.com/bonne_pioche
 
   permalinks:
     projects: /productions/:year-:slug/
