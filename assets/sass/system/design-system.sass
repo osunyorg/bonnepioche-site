@@ -3,15 +3,15 @@ html
     @include media-breakpoint-up(md)
         font-size: Min(Max(1vw, 13px), 16px)
 
-body.full-width
-    #main
-        background: white
-        padding-left: offset(3)
-        position: relative
-        margin-bottom: 100vh
-        min-height: 100vh
-        z-index: 1
-
-.hero
-    padding-top: 0
+@include media-breakpoint-up(desktop)
+    body.full-width
+        #main
+            background: white
+            padding-left: offset(3)
+            position: relative
+            margin-bottom: 100vh
+            min-height: 100vh
+            z-index: 1
+    .hero
+        padding-top: 0
 

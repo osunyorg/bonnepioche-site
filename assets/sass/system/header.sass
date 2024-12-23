@@ -1,60 +1,61 @@
-header#document-header
-    width: offset(3)
-    transform: none !important
-    position: fixed
-    left: 0
-    top: 0
-    bottom: 0
-    background: $header-background
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    nav:not(.upper-menu) 
-        padding-top: $spacing-4
-        > .container
-            padding-left: $spacing-4
-            padding-right: columns(1)
-            display: block
-            li > a
-                padding-right: 0
-            .nav-level-1
-                margin-top: $spacing-3
-                li
-                    a
-                        @include h2
-                        transition: all 0.45s cubic-bezier(0, 0.65, 0.4, 1.2)
-                        transform-origin: right
-                        &.active, &:hover
-                            transform: scale(1.33)
-    .logo
-        img
-            margin-left: auto
-    nav
-        padding-top: $spacing-4
-        padding-bottom: 0
-        text-align: right
-        > .container
-            padding-right: 0
-            align-items: center
-            justify-content: start
-            .nav-level-1
+@include media-breakpoint-up(desktop)
+    header#document-header
+        width: offset(3)
+        transform: none !important
+        position: fixed
+        left: 0
+        top: 0
+        bottom: 0
+        background: $header-background
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        nav:not(.upper-menu) 
+            padding-top: $spacing-4
+            > .container
+                padding-left: $spacing-4
+                padding-right: columns(1)
                 display: block
-                li, li:last-child
-                    a, span
-                        padding-top: $spacing-3
-                        padding-left: 0
-                        &.active
-                            font-weight: bold
-            .nav-level-2, .nav-level-3
-                display: none
-    .upper-menu
-        order: 2
-        text-align: left
-        padding-bottom: $spacing-2
-        li a, .pagefind-ui__toggle
-            @include h5
-            padding: $spacing-1 0 !important
-            color: var(--color-accent)
+                li > a
+                    padding-right: 0
+                .nav-level-1
+                    margin-top: $spacing-3
+                    li
+                        a
+                            @include h2
+                            transition: all 0.45s cubic-bezier(0, 0.65, 0.4, 1.2)
+                            transform-origin: right
+                            &.active, &:hover
+                                transform: scale(1.33)
+        .logo
+            img
+                margin-left: auto
+        nav
+            padding-top: $spacing-4
+            padding-bottom: 0
+            text-align: right
+            > .container
+                padding-right: 0
+                align-items: center
+                justify-content: start
+                .nav-level-1
+                    display: block
+                    li, li:last-child
+                        a, span
+                            padding-top: $spacing-3
+                            padding-left: 0
+                            &.active
+                                font-weight: bold
+                .nav-level-2, .nav-level-3
+                    display: none
+        .upper-menu
+            order: 2
+            text-align: left
+            padding-bottom: $spacing-2
+            li a, .pagefind-ui__toggle
+                @include h5
+                padding: $spacing-1 0 !important
+                color: var(--color-accent)
 
 #nav-accessibility
     position: fixed
