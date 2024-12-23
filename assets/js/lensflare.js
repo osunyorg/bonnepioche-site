@@ -53,5 +53,11 @@ window.osuny.Lensflare.prototype.getCircle = function () {
   return circleContainer;
 };
 
-var footer = document.getElementById('document-footer');
-new window.osuny.Lensflare(footer);
+// FOOTER
+if (document.body.classList.contains('page__home')) {
+  var home = document.querySelector('.page__home main');
+  new window.osuny.Lensflare(home);
+} else {
+  var footer = document.getElementById('document-footer');
+  new window.osuny.Lensflare(footer);
+}
