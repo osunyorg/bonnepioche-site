@@ -1,6 +1,6 @@
 // Slightly variable fonts
 html
-    @include media-breakpoint-up(md)
+    @include media-breakpoint-up(sm)
         font-size: Min(Max(1vw, 13px), 16px)
 
 @include media-breakpoint-up(desktop)
@@ -14,4 +14,11 @@ html
             z-index: 1
     .hero
         padding-top: 0
+
+.document-content
+    &::after
+        content: ''
+        display: block
+        height: 1px
+
 
