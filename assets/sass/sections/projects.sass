@@ -2,12 +2,19 @@
 .projects_categories__term,
 .block-projects--grid
     .grid
-        @include grid(3, md)
+        @include grid(2, desktop)
+        @include grid(3, xl)
 
 .projects__section,
-.projects_categories__term
+.projects_categories__term,
+.page-without-hero
     .hero
         display: none
+    .document-content
+        padding-top: $spacing-5
+    @include media-breakpoint-down(desktop)
+        .document-content
+            padding-top: var(--header-height)
 
 .projects__page, .projects__page.full-width
     @include media-breakpoint-up(desktop)
@@ -15,6 +22,7 @@
             position: static
             margin-bottom: 0
             .content
+                padding-top: $spacing-4
                 > figure
                     order: -1
                     width: columns(5)
@@ -25,6 +33,7 @@
                     width: columns(4)
                     align-self: end
                     padding-bottom: 0
+                    margin-top: 0
         .document-content
             padding-bottom: $spacing-5
         .block
@@ -35,17 +44,30 @@
                     margin-top: 0
             .block-content
                 padding-left: offset(5)
+    @include media-breakpoint-down(desktop)
+        .hero
+            margin-bottom: 0 !important
+            .content
+                padding-top: 0
+                display: flex
+                flex-direction: column
+                figure
+                    order: -1
+                    margin-bottom: $spacing-3 !important
+                    figcaption
+                        text-align: left
+                        padding-top: $spacing-1
+                        &::before
+                            position: static
+                            display: inline
+                            padding-left: 0
+                        .credit
+                            padding-left: 0
+                            display: inline
+                            > p
+                                display: inline
 
+.block.block-siblings-navigation
+    display: none
 
-.page-without-hero
-    .hero
-        display: none
-    .document-content
-        padding-top: $spacing-4
-
-.hero
-    .content
-        padding-top: $spacing-4
-        .hero-text
-            margin-top: 0
 

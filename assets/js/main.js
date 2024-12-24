@@ -1,3 +1,4 @@
 import './theme/';
-import './projects';
-import './lensflare';
+import './system/projectSingle';
+import './system/projectItem';
+import './system/lensflare';
