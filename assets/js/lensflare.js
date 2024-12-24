@@ -53,7 +53,6 @@ window.osuny.Lensflare.prototype.getCircle = function () {
   return circleContainer;
 };
 
-// FOOTER
 if (document.body.classList.contains('page__home')) {
   var home = document.querySelector('.page__home main');
   new window.osuny.Lensflare(home);

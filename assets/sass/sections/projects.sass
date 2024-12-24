@@ -8,14 +8,34 @@
 .projects_categories__term
     .hero
         display: none
-.projects__page
-    .hero
-        .content
-            > figure
-                order: -1
-                width: columns(5)
-            .hero-text
-                width: columns(4)
+
+.projects__page, .projects__page.full-width
+    @include media-breakpoint-up(desktop)
+        .hero
+            position: static
+            margin-bottom: 0
+            .content
+                > figure
+                    order: -1
+                    width: columns(5)
+                    position: absolute
+                    z-index: 3
+                .hero-text
+                    margin-left: offset(5)
+                    width: columns(4)
+                    align-self: end
+                    padding-bottom: 0
+        .document-content
+            padding-bottom: $spacing-5
+        .block
+            --block-space-y: #{$spacing-2}
+            &-chapter
+                margin-bottom: $spacing-3
+                + .block-video--button
+                    margin-top: 0
+            .block-content
+                padding-left: offset(5)
+
 
 .page-without-hero
     .hero

@@ -1,2 +1,3 @@
 import './theme/';
-import './lensflare/';
+import './projects';
+import './lensflare';
