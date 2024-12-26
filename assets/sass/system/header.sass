@@ -11,7 +11,7 @@
         flex-direction: column
         justify-content: space-between
         overflow-y: auto
-        nav:not(.upper-menu) 
+        nav.primary-menu
             padding-top: $spacing-4
             > .container
                 padding-left: $spacing-4
@@ -42,7 +42,7 @@
                 .nav-level-1
                     display: block
                     li, li:last-child
-                        a, span
+                        > a, > span
                             padding-top: $spacing-3
                             padding-left: 0
                             &.active
@@ -53,7 +53,7 @@
             order: 2
             text-align: left
             padding-bottom: $spacing-2
-            li a, .pagefind-ui__toggle
+            li a, .search-button
                 @include h5
                 padding: $spacing-1 0 !important
                 color: var(--color-accent)

@@ -10,8 +10,8 @@ params:
     position: hero
   search:
     active: true
-    position: upper-menu
-    appearance: text
+    positions:
+      - upper-menu
   breadcrumb:
     position: none
   menu:
