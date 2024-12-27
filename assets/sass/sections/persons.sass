@@ -11,9 +11,14 @@
         margin-bottom: var(--block-space-y)
         ol
             flex-direction: row
-            gap: $spacing-5
+            gap: $spacing-3
+            @include media-breakpoint-up(desktop)
+                gap: $spacing-5
+
             li
                 white-space: nowrap
+                &:last-child
+                    padding-right: var(--grid-gutter)
                 a
                     color: var(--color-accent)
                     @include h3
