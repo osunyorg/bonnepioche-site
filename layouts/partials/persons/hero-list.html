@@ -1,0 +1,16 @@
+{{- $title := or .Params.header_text .Title -}}
+{{- partial "header/hero.html"
+      (dict
+        "title" $title
+        "image" .Params.image
+        "context" .
+        "sizes" site.Params.image_sizes.sections.persons.hero
+      ) -}}
+
+<nav class="toc toc-pages" id="nav-toc" aria-labelledby="toc-title">
+  <ol>
+    {{- if .Params.contents -}}
+      {{- partial "blocks/toc.html" .Params.contents -}}
+    {{- end -}}
+  </ol>
+</nav>

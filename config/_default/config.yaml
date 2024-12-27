@@ -14,11 +14,16 @@ params:
       - upper-menu
   breadcrumb:
     position: none
+  toc:
+    disabled: true
   menu:
     i18n: 
       display: false
   design:
     force_full_width: true
+  persons:
+    index:
+      taxonomies: true
   projects:
     index:
       options:

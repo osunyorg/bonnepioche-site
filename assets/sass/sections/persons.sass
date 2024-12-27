@@ -1,0 +1,31 @@
+.persons__section
+    @include media-breakpoint-up(desktop)
+        &.full-width
+            --heading-margin-top: #{$spacing-3}
+            --heading-margin-bottom: #{$spacing-3}
+    .hero
+        margin-bottom: 0
+    .toc
+        @include container
+        padding-right: 0
+        overflow-x: auto
+        padding-bottom: $spacing-3
+        margin-bottom: var(--block-space-y)
+        ol
+            flex-direction: row
+            gap: $spacing-5
+            li
+                white-space: nowrap
+                a
+                    color: var(--color-accent)
+                    @include h3
+    .block-persons
+        .persons
+            margin-bottom: 0
+            padding-bottom: 0
+
+body.persons__section
+    @include media-breakpoint-up(desktop)
+        &.full-width
+            --heading-margin-top: #{$spacing-4}
+            --heading-margin-bottom: #{$spacing-4}
