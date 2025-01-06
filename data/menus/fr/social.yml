@@ -16,4 +16,9 @@ items:
   kind: url
   new_tab: true
   children: []
+- title: X (ex-twitter)
+  target: https://x.com/bonne_pioche
+  kind: url
+  new_tab: true
+  children: []
 
