@@ -4,7 +4,8 @@
         position: relative
         &-title
             a
-                @include h2
+                @include h3
+                font-size: pxToRem(32)
                 color: var(--color-accent)
         @include media-breakpoint-up(desktop)
             overflow: hidden
@@ -13,7 +14,7 @@
             .media
                 margin-bottom: 0
             .project-content
-                background: white
+                background: rgba(255, 255, 255, 0.9)
                 position: absolute
                 left: 0
                 right: 0
