@@ -17,6 +17,9 @@
             padding-top: var(--header-height)
 
 .projects__page, .projects__page.full-width
+    .hero-text
+        p, .project-infos
+            @extend .sr-only
     @include media-breakpoint-up(desktop)
         .hero
             position: static
