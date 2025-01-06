@@ -1,11 +1,6 @@
 ---
 title: Liens sociaux
 items:
-- title: Facebook
-  target: https://www.facebook.com/BonnePiocheProd
-  kind: url
-  new_tab: true
-  children: []
 - title: Instagram
   target: https://www.instagram.com/bonnepioche
   kind: url
