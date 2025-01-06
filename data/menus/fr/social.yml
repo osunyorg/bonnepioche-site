@@ -9,7 +9,7 @@ items:
 - title: Instagram
   target: https://www.instagram.com/bonnepioche
   kind: url
-  new_tab: false
+  new_tab: true
   children: []
 - title: Linkedin
   target: https://www.linkedin.com/company/bonnepioche/posts/?feedView=all
