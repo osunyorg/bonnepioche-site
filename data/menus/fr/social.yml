@@ -6,4 +6,9 @@ items:
   kind: url
   new_tab: true
   children: []
+- title: Instagram
+  target: https://www.instagram.com/bonnepioche
+  kind: url
+  new_tab: false
+  children: []
 
