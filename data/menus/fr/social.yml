@@ -11,4 +11,9 @@ items:
   kind: url
   new_tab: false
   children: []
+- title: Linkedin
+  target: https://www.linkedin.com/company/bonnepioche/posts/?feedView=all
+  kind: url
+  new_tab: true
+  children: []
 
