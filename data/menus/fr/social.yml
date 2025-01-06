@@ -1,4 +1,9 @@
 ---
 title: Liens sociaux
-items: []
+items:
+- title: Facebook
+  target: https://www.facebook.com/BonnePiocheProd
+  kind: url
+  new_tab: true
+  children: []
 
