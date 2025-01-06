@@ -1,4 +1,9 @@
 ---
 title: Liens sociaux
-items: []
+items:
+- title: Instagram
+  target: https://www.instagram.com/bonnepioche
+  kind: url
+  new_tab: true
+  children: []
 
