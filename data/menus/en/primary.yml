@@ -1,6 +1,13 @@
 ---
 title: Main menu
 items:
+- title: Bonne Pioche Cinema
+  target: "/en/cinema/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/cinema"
+  file: content/en/pages/cinema/_index.html
 - title: Posts
   target: "/en/posts/"
   kind: page
