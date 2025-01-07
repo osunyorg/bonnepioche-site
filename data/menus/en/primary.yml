@@ -29,4 +29,11 @@ items:
   children: []
   path: "/pages/shows"
   file: content/en/pages/shows/_index.html
+- title: Music
+  target: "/en/music/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/music"
+  file: content/en/pages/music/_index.html
 
