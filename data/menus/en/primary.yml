@@ -1,7 +1,7 @@
 ---
 title: Main menu
 items:
-- title: Bonne Pioche Cinema
+- title: Cinema
   target: "/en/cinema/"
   kind: page
   new_tab: false
