@@ -1,4 +1,11 @@
 ---
 title: Secondaire
-items: []
+items:
+- title: Team
+  target: "/en/team/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/persons"
+  file: content/en/persons/_index.html
 
