@@ -22,7 +22,7 @@ items:
   children: []
   path: "/pages/story"
   file: content/en/pages/story/_index.html
-- title: Spectacles
+- title: Shows
   target: "/en/shows/"
   kind: page
   new_tab: false
