@@ -8,7 +8,7 @@ items:
   children: []
   path: "/pages/cinema"
   file: content/en/pages/cinema/_index.html
-- title: Télévision
+- title: Television
   target: "/en/television/"
   kind: page
   new_tab: false
