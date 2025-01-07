@@ -1,6 +1,11 @@
 ---
 title: Secondaire
 items:
+- title: Shop
+  target: ''
+  kind: url
+  new_tab: false
+  children: []
 - title: Team
   target: "/en/team/"
   kind: page
