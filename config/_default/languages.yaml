@@ -79,8 +79,8 @@ en:
             https://x.com/bonne_pioche
 
   permalinks:
-    projects: /projects/:year-:slug/
-    projects_categories: /projects/:slug/
+    projects: /productions/:year-:slug/
+    projects_categories: /productions/:slug/
     persons: /team/:slug/
     persons_categories: /team/categories/:slug/
   taxonomies:
