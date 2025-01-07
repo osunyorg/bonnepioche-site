@@ -8,11 +8,4 @@ items:
   children: []
   path: "/pages/cinema"
   file: content/en/pages/cinema/_index.html
-- title: Projects
-  target: "/en/projects/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/projects"
-  file: content/en/projects/_index.html
 
