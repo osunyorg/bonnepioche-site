@@ -8,4 +8,25 @@ items:
   children: []
   path: "/pages/cinema"
   file: content/en/pages/cinema/_index.html
+- title: Télévision
+  target: "/en/television/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/television"
+  file: content/en/pages/television/_index.html
+- title: Story
+  target: "/en/story/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/story"
+  file: content/en/pages/story/_index.html
+- title: Spectacles
+  target: "/en/shows/"
+  kind: page
+  new_tab: false
+  children: []
+  path: "/pages/shows"
+  file: content/en/pages/shows/_index.html
 
