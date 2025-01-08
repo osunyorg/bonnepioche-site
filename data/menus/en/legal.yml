@@ -8,13 +8,6 @@ items:
   children: []
   path: "/pages/legal-terms"
   file: content/en/pages/legal-terms/_index.html
-- title: Privacy policy
-  target: "/en/privacy-policy/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/pages/privacy-policy"
-  file: content/en/pages/privacy-policy/_index.html
 - title: Accessibility
   target: "/en/accessibility/"
   kind: page
