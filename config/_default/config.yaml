@@ -1,7 +1,5 @@
 theme: osuny
-paginate: 24
-enableRobotsTXT: true
-removePathAccents: true
+_merge: deep
 params:
   logo:
     header: "/assets/images/logo-red.svg"
