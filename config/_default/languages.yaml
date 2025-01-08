@@ -82,11 +82,21 @@ en:
             bonnepioche
           value: >-
             https://www.linkedin.com/company/bonnepioche/
+        tiktok:
+          label: >-
+            bonnepiocheprod
+          value: >-
+            https://www.tiktok.com/@bonnepiocheprod
         x:
           label: >-
             bonne_pioche
           value: >-
             https://x.com/bonne_pioche
+        youtube:
+          label: >-
+            bonnepiocheproductions
+          value: >-
+            https://www.youtube.com/@bonnepiocheproductions
 
   permalinks:
     projects: /productions/:year-:slug/
