@@ -8,13 +8,6 @@ items:
   children: []
   path: "/pages/legal-terms"
   file: content/en/pages/legal-terms/_index.html
-- title: Accessibility
-  target: "/en/accessibility/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/pages/accessibility"
-  file: content/en/pages/accessibility/_index.html
 - title: Sitemap
   target: "/en/sitemap/"
   kind: page
