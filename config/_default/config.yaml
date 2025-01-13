@@ -15,8 +15,12 @@ params:
   toc:
     disabled: true
   menu:
-    i18n: 
-      display: false
+    primary:
+      i18n: false
+    upper-menu:
+      i18n: true
+    legal:
+      i18n: false
   design:
     force_full_width: true
   persons:
