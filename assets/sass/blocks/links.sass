@@ -1,0 +1,14 @@
+.block-links
+    .links
+        @include in-page-with-or-without-sidebar
+            display: block
+        margin-left: -($spacing-3)
+        li
+            @extend .btn
+            .link-content
+                min-height: unset
+                padding: 0
+                a::after
+                    position: relative
+                    bottom: unset
+                    right: unset
