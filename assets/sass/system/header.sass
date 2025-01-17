@@ -1,5 +1,24 @@
-@include media-breakpoint-up(desktop)
-    header#document-header
+header#document-header
+    .upper-menu
+        order: 2
+        text-align: left
+        padding-bottom: $spacing-2
+        .nav-level-1
+            li:not(.upper-menu-i18n) a, 
+            .search-button,
+            .upper-menu-i18n span
+                @include h5
+                padding: $spacing-1 0 !important
+                color: var(--color-accent)
+            a.active
+                box-shadow: none !important
+            li.upper-menu-i18n
+                span[role="button"]::after
+                    display: none
+                .dropdown-languages
+                    right: 0
+                    left: unset
+    @include media-breakpoint-up(desktop)
         width: offset(3)
         transform: none !important
         position: fixed
@@ -51,26 +70,28 @@
                                 font-weight: bold
                 .nav-level-2, .nav-level-3
                     display: none
-        .upper-menu
-            order: 2
-            text-align: left
-            padding-bottom: $spacing-2
-            li a, 
-            .search-button,
-            .header-i18n span
-                @include h5
-                padding: $spacing-1 0 !important
-                color: var(--color-accent)
-            a.active
-                box-shadow: none !important
-            @include media-breakpoint-up(desktop)
+    @include media-breakpoint-down(desktop)
+        .has-menu-opened &
+            display: flex
+            flex-direction: column
+            height: 100vh
+            justify-content: space-between
+        &.has-upper-menu
+            .upper-menu
+                position: relative
+                top: unset
+                ul
+                    display: block
+            .menu
+                padding-top: 0
                 .nav-level-1 
-                    > li.header-i18n
-                        span[role="button"]:after
-                            display: none
-                        .dropdown-languages
-                            right: 0
-                            left: unset
+                    > li
+                        border-bottom: 0
+                    a
+                        @include h2
+                        padding: space(4) 0
+                        &.active
+                            @include h1
 
 #nav-accessibility
     position: fixed

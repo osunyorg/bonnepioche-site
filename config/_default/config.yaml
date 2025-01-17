@@ -10,6 +10,9 @@ params:
     active: true
     positions:
       - upper-menu
+  i18n:
+    positions:
+      - upper-menu
   breadcrumb:
     position: none
   toc:
