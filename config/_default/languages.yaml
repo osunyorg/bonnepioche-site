@@ -41,6 +41,7 @@ fr:
             https://www.youtube.com/@bonnepiocheproductions
 
   permalinks:
+    pages_categories: /:slug/
     projects: /productions/:year-:slug/
     projects_categories: /productions/:slug/
     persons: /equipe/:slug/
@@ -52,6 +53,7 @@ fr:
     events_category: events_categories
     location: locations
     organizations_category: organizations_categories
+    pages_category: pages_categories
     persons_category: persons_categories
     posts_category: posts_categories
     projects_category: projects_categories
@@ -99,6 +101,7 @@ en:
             https://www.youtube.com/@bonnepiocheproductions
 
   permalinks:
+    pages_categories: /:slug/
     projects: /productions/:year-:slug/
     projects_categories: /productions/:slug/
     persons: /team/:slug/
@@ -110,6 +113,7 @@ en:
     events_category: events_categories
     location: locations
     organizations_category: organizations_categories
+    pages_category: pages_categories
     persons_category: persons_categories
     posts_category: posts_categories
     projects_category: projects_categories
