@@ -83,22 +83,24 @@ header#document-header
         html.has-menu-opened &
             display: flex
             min-height: 100vh
+            padding-bottom: $spacing-3
         .upper-menu
             position: relative
             top: auto
             ul
                 display: block
                 height: unset
-        &.has-upper-menu
-            .menu
-                margin-top: 0
-        .nav-level-1
-            li
-                border-bottom: 0 !important
-                > a, > span, > button
-                    padding-bottom: $spacing-1
-                    padding-top: $spacing-1
-                    line-height: 1
+        nav.primary-menu
+            > .container
+                .nav-level-1
+                    li
+                        border-bottom: 0 !important
+                        > a, > span, > button
+                            padding-bottom: $spacing-1
+                            padding-top: $spacing-1
+                            line-height: 1
+                            &.active
+                                @include h1
 
 #nav-accessibility
     position: fixed
