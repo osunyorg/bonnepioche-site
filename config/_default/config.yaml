@@ -10,13 +10,13 @@ params:
     active: true
     positions:
       - upper-menu
+  i18n:
+    positions:
+      - upper-menu
   breadcrumb:
     position: none
   toc:
     disabled: true
-  i18n:
-    positions:
-      - upper-menu
   design:
     force_full_width: true
   persons:
