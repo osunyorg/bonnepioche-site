@@ -61,6 +61,15 @@
                 color: var(--color-accent)
             a.active
                 box-shadow: none !important
+            .upper-menu-i18n 
+                [role="button"]
+                    &::after
+                        content: ""
+                .dropdown-menu
+                    position: relative
+                    left: auto !important
+                    padding-top: 0
+                    padding-bottom: 0
 
 #nav-accessibility
     position: fixed
@@ -69,3 +78,18 @@
 
 .hero
     margin-bottom: 0
+
+// @include media-breakpoint-down(desktop)
+//     .upper-menu-i18n
+//         display: none !important
+//     .primary-menu-i18n
+//         display: block !important
+
+@include media-breakpoint-up(desktop)
+    body
+        &::after
+            @include inset(0)
+            background-color: $body-overlay-color
+        html.has-menu-opened &
+            &::after
+                display: none

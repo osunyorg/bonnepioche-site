@@ -14,13 +14,9 @@ params:
     position: none
   toc:
     disabled: true
-  menu:
-    primary:
-      i18n: false
-    upper-menu:
-      i18n: true
-    legal:
-      i18n: false
+  i18n:
+    positions:
+      - upper-menu
   design:
     force_full_width: true
   persons:
