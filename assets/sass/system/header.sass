@@ -1,23 +1,29 @@
 header#document-header
+    nav.primary-menu
+        > .container
+            .nav-level-1
+                li
+                    a
+                        @include h2
     .upper-menu
         order: 2
         text-align: left
         padding-bottom: $spacing-2
-        .nav-level-1
-            li:not(.upper-menu-i18n) a, 
-            .search-button,
-            .upper-menu-i18n span
-                @include h5
-                padding: $spacing-1 0 !important
-                color: var(--color-accent)
-            a.active
-                box-shadow: none !important
-            li.upper-menu-i18n
-                span[role="button"]::after
-                    display: none
-                .dropdown-languages
-                    right: 0
-                    left: unset
+        li a, .search-button, [role="button"]
+            @include h5
+            padding: $spacing-1 0 !important
+            color: var(--color-accent)
+        a.active
+            box-shadow: none !important
+        .upper-menu-i18n 
+            [role="button"]
+                &::after
+                    content: ""
+            .dropdown-menu
+                position: relative
+                left: auto !important
+                padding-top: 0
+                padding-bottom: 0
     @include media-breakpoint-up(desktop)
         width: offset(3)
         transform: none !important
@@ -71,27 +77,30 @@ header#document-header
                 .nav-level-2, .nav-level-3
                     display: none
     @include media-breakpoint-down(desktop)
-        .has-menu-opened &
+        flex-direction: column
+        justify-content: space-between
+        gap: $spacing-3
+        html.has-menu-opened &
             display: flex
-            flex-direction: column
-            height: 100vh
-            justify-content: space-between
-        &.has-upper-menu
-            .upper-menu
-                position: relative
-                top: unset
-                ul
-                    display: block
-            .menu
-                padding-top: 0
-                .nav-level-1 
-                    > li
-                        border-bottom: 0
-                    a
-                        @include h2
-                        padding: space(4) 0
-                        &.active
-                            @include h1
+            min-height: 100vh
+            padding-bottom: $spacing-3
+        .upper-menu
+            position: relative
+            top: auto
+            ul
+                display: block
+                height: unset
+        nav.primary-menu
+            > .container
+                .nav-level-1
+                    li
+                        border-bottom: 0 !important
+                        > a, > span, > button
+                            padding-bottom: $spacing-1
+                            padding-top: $spacing-1
+                            line-height: 1
+                            &.active
+                                @include h1
 
 #nav-accessibility
     position: fixed
@@ -100,3 +109,12 @@ header#document-header
 
 .hero
     margin-bottom: 0
+
+@include media-breakpoint-up(desktop)
+    body
+        &::after
+            @include inset(0)
+            background-color: $body-overlay-color
+        html.has-menu-opened &
+            &::after
+                display: none
