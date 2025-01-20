@@ -1,5 +1,30 @@
-@include media-breakpoint-up(desktop)
-    header#document-header
+header#document-header
+    nav.primary-menu
+        > .container
+            .nav-level-1
+                li
+                    a
+                        @include h2
+    .upper-menu
+        order: 2
+        text-align: left
+        padding-bottom: $spacing-2
+        li a, .search-button, [role="button"]
+            @include h5
+            padding: $spacing-1 0 !important
+            color: var(--color-accent)
+        a.active
+            box-shadow: none !important
+        .upper-menu-i18n 
+            [role="button"]
+                &::after
+                    content: ""
+            .dropdown-menu
+                position: relative
+                left: auto !important
+                padding-top: 0
+                padding-bottom: 0
+    @include media-breakpoint-up(desktop)
         width: offset(3)
         transform: none !important
         position: fixed
@@ -51,25 +76,29 @@
                                 font-weight: bold
                 .nav-level-2, .nav-level-3
                     display: none
+    @include media-breakpoint-down(desktop)
+        flex-direction: column
+        justify-content: space-between
+        gap: $spacing-3
+        html.has-menu-opened &
+            display: flex
+            min-height: 100vh
         .upper-menu
-            order: 2
-            text-align: left
-            padding-bottom: $spacing-2
-            li a, .search-button, [role="button"]
-                @include h5
-                padding: $spacing-1 0 !important
-                color: var(--color-accent)
-            a.active
-                box-shadow: none !important
-            .upper-menu-i18n 
-                [role="button"]
-                    &::after
-                        content: ""
-                .dropdown-menu
-                    position: relative
-                    left: auto !important
-                    padding-top: 0
-                    padding-bottom: 0
+            position: relative
+            top: auto
+            ul
+                display: block
+                height: unset
+        &.has-upper-menu
+            .menu
+                margin-top: 0
+        .nav-level-1
+            li
+                border-bottom: 0 !important
+                > a, > span, > button
+                    padding-bottom: $spacing-1
+                    padding-top: $spacing-1
+                    line-height: 1
 
 #nav-accessibility
     position: fixed
@@ -78,12 +107,6 @@
 
 .hero
     margin-bottom: 0
-
-// @include media-breakpoint-down(desktop)
-//     .upper-menu-i18n
-//         display: none !important
-//     .primary-menu-i18n
-//         display: block !important
 
 @include media-breakpoint-up(desktop)
     body
