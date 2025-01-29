@@ -47,34 +47,42 @@
 .footer-i18n, .footer-credit
     display: none
 
-.footer-social.site-links
-    a, span
-        color: white
-    li
-        @include h3
-        display: flex
-        flex-direction: row-reverse
-        align-items: center
-        gap: $spacing-2
-        &::after
-            font-size: 0.75em
-            opacity: 0.6
-    @include media-breakpoint-up(desktop)
-        display: flex
-        column-gap: $spacing-3
-        flex-wrap: wrap
-        justify-content: center
-        li + li
-            margin-top: 0 !important
-    .linkedin
-        order: 1
-    .instagram
-        order: 2
-    .facebook
-        order: 3
-    .youtube
-        order: 4
-    .tiktok
-        order: 5
-    .x
-        order: 6
+footer#document-footer
+    .footer-social.site-links
+        a, span
+            color: white
+        li
+            @include h3
+            display: flex
+            flex-direction: row-reverse
+            align-items: center
+            gap: $spacing-2
+            &::after
+                font-size: 0.75em
+                opacity: 0.6
+        @include media-breakpoint-up(desktop)
+            display: flex
+            column-gap: $spacing-3
+            flex-wrap: wrap
+            justify-content: center
+            li + li
+                margin-top: 0 !important
+        @include media-breakpoint-down(desktop)
+            display: flex
+            flex-direction: column
+            li:not(.linkedin)
+                margin-top: $spacing-2
+            li + li.linkedin
+                margin-top: 0
+        .linkedin
+            order: 1
+        .instagram
+            order: 2
+        .facebook
+            order: 3
+        .youtube
+            order: 4
+        .tiktok
+            order: 5
+        .x
+            order: 6

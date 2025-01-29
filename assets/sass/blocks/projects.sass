@@ -6,11 +6,13 @@
             a
                 @include h3
                 font-size: pxToRem(32)
-                color: white
+                color: var(--color-accent)
         @include media-breakpoint-up(desktop)
             overflow: hidden
             &-title
                 padding: $spacing-3
+                a
+                    color: white
             .media
                 margin-bottom: 0
             .project-content
