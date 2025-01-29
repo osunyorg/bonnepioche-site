@@ -1,4 +1,10 @@
 blocks:
   video:
     play: Watch the trailer
+commons:
+  contact:
+    socials:
+      social_networks:
+        twitter: X
+        x: X
 tagline: produces feature films, documentaries, fiction series, spectacles and film scores.
