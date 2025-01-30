@@ -1,6 +1,7 @@
 theme: osuny
 _merge: deep
 params:
+  plausible: bonnepioche.fr
   logo:
     header: "/assets/images/logo-red.svg"
     footer: "/assets/images/logo-white.svg"
