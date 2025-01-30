@@ -71,9 +71,8 @@ footer#document-footer,
         @include media-breakpoint-down(desktop)
             display: flex
             flex-direction: column
-            li:not(.linkedin)
-                margin-top: $spacing-2
-            li + li.linkedin
+            row-gap: $spacing-2
+            li
                 margin-top: 0
         .linkedin
             order: 1
