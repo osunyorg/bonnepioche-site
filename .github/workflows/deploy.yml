@@ -1,4 +1,4 @@
-name: infomaniak
+name: Infomaniak
 
 on:
   push:
@@ -6,10 +6,10 @@ on:
       - main  # Set a branch to deploy
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}
-      cancel-in-progress: true
+      cancel-in-progress: false # Can cause difficulties to publish when lots of changes are done
     steps:
       - uses: actions/checkout@v3
         with:
@@ -25,12 +25,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 'lts/*'
+          node-version: '16'
           cache: 'yarn'
 
       - name: Install JS dependencies
-        run: yarn install
-x
+        run: yarn install --frozen-lockfile
+
       - name: Build
         run: yarn osuny build
 
@@ -46,7 +46,7 @@ x
       - name: Deploy with rsync
         run: rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }}" ./public/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_WORKDIR }}/
 
-      - name: Notification Slack en cas d'échec
+      - name: Notification Slack en cas d'échecs
         uses: ravsamhq/notify-slack-action@2.3.0
         if: always()
         with:
