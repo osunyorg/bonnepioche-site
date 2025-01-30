@@ -32,17 +32,19 @@
             margin-left: auto
             margin-right: auto
             margin-bottom: $spacing-3
-        .tagline
-            @include h2
-            display: block
-            text-transform: none
-            text-align: center
-            @include media-breakpoint-up(desktop)
-                width: 42ch
 
-.footer-logo
-    .tagline
-        display: none
+.tagline
+    display: block
+    text-align: left
+    @include media-breakpoint-down(desktop)
+        @include h3
+        text-transform: none
+        margin-top: $spacing-1
+    @include media-breakpoint-up(desktop)
+        @include h2
+        text-transform: none
+        text-align: center
+        width: 42ch
 
 .footer-i18n, .footer-credit
     display: none
