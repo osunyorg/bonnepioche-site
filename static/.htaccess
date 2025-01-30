@@ -10,12 +10,12 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 # - modifier "mon-domaine.fr" par votre domaine. Attention, dans la directive RewriteCond, utilisez un "\" avant un caractère spécial comme le "-"
 
 # = Rediriger un domaine racine au www (mon-domain.fr => www.mon-domaine.fr)
-RewriteCond %{HTTP_HOST} ^bonnepioche\.fr [NC]
-RewriteRule ^(.*)$ https://www.bonnepioche.fr/$1 [L,R=301]
+# RewriteCond %{HTTP_HOST} ^bonnepioche\.fr [NC]
+# RewriteRule ^(.*)$ https://www.bonnepioche.fr/$1 [L,R=301]
 
 # = Rediriger un www au domaine racine (www.mon-domain.fr => mon-domaine.fr)
-# RewriteCond %{HTTP_HOST} ^www.bonnepioche\.fr [NC]
-# RewriteRule ^(.*)$ https://bonnepioche.fr/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www.bonnepioche\.fr [NC]
+RewriteRule ^(.*)$ https://bonnepioche.fr/$1 [L,R=301]
 
 # = Gérer les erreurs 404
 ErrorDocument 404 /404.html
