@@ -32,3 +32,11 @@ body.persons__section
         &.full-width
             --heading-margin-top: #{$spacing-4}
             --heading-margin-bottom: #{$spacing-4}
+
+article.person
+    .person-name
+        margin-bottom: $spacing-1
+    @include media-breakpoint-up(desktop)
+        .description
+            margin-left: -$spacing-2
+            margin-right: -$spacing-2
