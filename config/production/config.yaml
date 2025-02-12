@@ -2,6 +2,11 @@
 
 baseURL: https://bonnepioche.fr
 
+## OSUNY
+osuny:
+  website:
+    id: 59877ebe-f111-4ef5-9985-6a577f1e28ab
+
 ## LANGUAGE
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
