@@ -22,7 +22,7 @@ params:
     force_full_width: true
   persons:
     index:
-      taxonomies: true
+      taxonomies: false
   projects:
     index:
       options:
