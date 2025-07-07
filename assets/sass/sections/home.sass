@@ -52,6 +52,9 @@
         align-items: center
         justify-content: center
         gap: $spacing-3
+        padding-left: 0
+        @include media-breakpoint-down(desktop)
+            flex-direction: row !important
         @include media-breakpoint-up(desktop)
             margin-top: $spacing-6
         li + li

@@ -22,7 +22,8 @@ params:
     force_full_width: true
   persons:
     index:
-      taxonomies: false
+      taxonomies:
+        display: false
   projects:
     index:
       options:
