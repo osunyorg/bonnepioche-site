@@ -12,6 +12,9 @@
         @extend .sr-only
     .document-content
         padding-top: $spacing-5
+    .blocks
+        .block:first-child
+            margin-top: 0
     @include media-breakpoint-down(desktop)
         .document-content
             padding-top: var(--header-height)
