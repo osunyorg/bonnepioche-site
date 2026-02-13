@@ -2,38 +2,48 @@
 title: Main menu
 items:
 - title: Cinema
+  slug: cinema
   target: "/en/cinema/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/cinema"
   file: content/en/pages/cinema/_index.html
 - title: Television
+  slug: television
   target: "/en/television/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/television"
   file: content/en/pages/television/_index.html
 - title: Story
+  slug: story
   target: "/en/story/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/story"
   file: content/en/pages/story/_index.html
 - title: Spectacles
+  slug: spectacles
   target: "/en/shows/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/shows"
   file: content/en/pages/shows/_index.html
 - title: Music
+  slug: music
   target: "/en/music/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/music"
   file: content/en/pages/music/_index.html
 
