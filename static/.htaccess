@@ -34,7 +34,7 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
-# = Rediriger le www au domaine racine
+# = Rediriger www.bonnepioche.fr vers bonnepioche.fr
 RewriteCond %{HTTP_HOST} ^www.bonnepioche\.fr [NC]
 RewriteRule ^(.*)$ https://bonnepioche.fr/$1 [L,R=301]
 
