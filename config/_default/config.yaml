@@ -32,9 +32,10 @@ params:
         title: false
         year: false
     single:
-      options:
-        categories: true
-        summary: true
-        year: false
+      meta:
+        options:
+          reading_time: false
+          taxonomies: false
+          year: false
   share_links:
     enabled: false
